@@ -1,3 +1,4 @@
+export const compatibilityDate = "2026-09-21";
 export default {
   async fetch(request) {
     const url = new URL(request.url);
