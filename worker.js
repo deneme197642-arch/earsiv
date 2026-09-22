@@ -300,3 +300,4 @@ Yeni sürüm yayınlandığında aynı indirme bağlantısı kullanılmaya devam
     return new Response("Not Found", { status: 404 });
   }
 };
+export default {
