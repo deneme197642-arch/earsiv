@@ -1,4 +1,3 @@
-export const compatibilityDate = "2026-09-21";
 export default {
   async fetch(request) {
     const url = new URL(request.url);
@@ -18,10 +17,14 @@ export default {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>E-Arşiv İndirici | Ofis İş Takip</title>
 
 <style>
-*{box-sizing:border-box}
+
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
@@ -191,7 +194,9 @@ footer{
 }
 
 @media(max-width:800px){
-  .hero,.features{
+
+  .hero,
+  .features{
     grid-template-columns:1fr;
   }
 
@@ -206,8 +211,11 @@ footer{
   .nav{
     margin-bottom:35px;
   }
+
 }
+
 </style>
+
 </head>
 
 <body>
@@ -215,78 +223,135 @@ footer{
 <div class="wrap">
 
 <header class="nav">
-  <div class="brand">Ofis <span>İş Takip</span></div>
-  <div class="badge">Windows Uygulaması</div>
+
+  <div class="brand">
+    Ofis <span>İş Takip</span>
+  </div>
+
+  <div class="badge">
+    Windows Uygulaması
+  </div>
+
 </header>
+
 
 <section class="hero">
 
-<div class="card main">
+  <div class="card main">
 
-<div class="eyebrow">● Güncel sürüm</div>
+    <div class="eyebrow">
+      ● Güncel sürüm
+    </div>
 
-<h1>E-Arşiv İndirici</h1>
+    <h1>
+      E-Arşiv İndirici
+    </h1>
 
-<p>
-GİB e-Arşiv işlemleriniz için hazırlanan Windows uygulamasının
-güncel sürümünü güvenli ve kolay şekilde indirin.
-</p>
+    <p>
+      GİB e-Arşiv işlemleriniz için hazırlanan Windows uygulamasının
+      güncel sürümünü güvenli ve kolay şekilde indirin.
+    </p>
 
-<a class="btn" href="/earsiv/download">
-↓ &nbsp; PROGRAMI İNDİR
-</a>
+    <a class="btn" href="/earsiv/download">
+      ↓ &nbsp; PROGRAMI İNDİR
+    </a>
 
-<div class="note">
-ZIP dosyasını indirdikten sonra Windows'ta ZIP'i çıkartarak programı çalıştırabilirsiniz.
-</div>
+    <div class="note">
+      ZIP dosyasını indirdikten sonra Windows'ta ZIP'i çıkartarak
+      programı çalıştırabilirsiniz.
+    </div>
 
-</div>
+  </div>
 
-<div class="card side">
 
-<div class="icon">▣</div>
+  <div class="card side">
 
-<h2>Hızlı ve pratik</h2>
+    <div class="icon">
+      ▣
+    </div>
 
-<p>
-Program tek bir ZIP paketi halinde sunulur.
-Yeni sürüm yayınlandığında aynı indirme bağlantısı kullanılmaya devam eder.
-</p>
+    <h2>
+      Hızlı ve pratik
+    </h2>
 
-</div>
+    <p>
+      Program tek bir ZIP paketi halinde sunulur.
+      Yeni sürüm yayınlandığında aynı indirme bağlantısı
+      kullanılmaya devam eder.
+    </p>
+
+  </div>
 
 </section>
+
 
 <section class="features">
 
-<div class="card feature">
-<strong>Windows</strong>
-<p>Windows bilgisayarlarda çalışacak şekilde hazırlanmıştır.</p>
-</div>
+  <div class="card feature">
 
-<div class="card feature">
-<strong>Kolay İndirme</strong>
-<p>Tek butonla güncel ZIP paketini indirebilirsiniz.</p>
-</div>
+    <strong>
+      Windows
+    </strong>
 
-<div class="card feature">
-<strong>Güncel Paket</strong>
-<p>Yeni sürüm yüklendiğinde aynı bağlantı üzerinden sunulur.</p>
-</div>
+    <p>
+      Windows bilgisayarlarda çalışacak şekilde hazırlanmıştır.
+    </p>
+
+  </div>
+
+
+  <div class="card feature">
+
+    <strong>
+      Kolay İndirme
+    </strong>
+
+    <p>
+      Tek butonla güncel ZIP paketini indirebilirsiniz.
+    </p>
+
+  </div>
+
+
+  <div class="card feature">
+
+    <strong>
+      Güncel Paket
+    </strong>
+
+    <p>
+      Yeni sürüm yüklendiğinde aynı bağlantı üzerinden sunulur.
+    </p>
+
+  </div>
 
 </section>
+
 
 <section class="card info">
 
-<div>Dosya<br><strong>eArsiv_Indirici.zip</strong></div>
-<div>Platform<br><strong>Windows</strong></div>
-<div>Format<br><strong>ZIP</strong></div>
+  <div>
+    Dosya<br>
+    <strong>eArsiv_Indirici.zip</strong>
+  </div>
+
+  <div>
+    Platform<br>
+    <strong>Windows</strong>
+  </div>
+
+  <div>
+    Format<br>
+    <strong>ZIP</strong>
+  </div>
 
 </section>
 
+
 <footer>
-© Ofis İş Takip · E-Arşiv İndirici
+  © Ofis İş Takip · E-Arşiv İndirici
 </footer>
+
 
 </div>
 
@@ -298,7 +363,8 @@ Yeni sürüm yayınlandığında aynı indirme bağlantısı kullanılmaya devam
       });
     }
 
-    return new Response("Not Found", { status: 404 });
+    return new Response("Not Found", {
+      status: 404
+    });
   }
 };
-
